@@ -1,7 +1,7 @@
 using System;
 class Divisibility{
 	public static void Main(){
-		int Number = int.Parse(Console.ReadLine());
+		int Number = Convert.ToInt32(Console.ReadLine());
 		if(Number%5==0){
 		Console.WriteLine(" Is the number "+ Number +" divisible by 5? Yes");
 		}
