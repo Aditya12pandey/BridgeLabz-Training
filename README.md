@@ -1,5 +1,4 @@
 # BridgeLabz-Training
-#Capgemini Training Program
 # C# and .NET Learning Journey
 
 This repository documents my day-by-day learning and hands-on practice in **C# and .NET fundamentals**.
