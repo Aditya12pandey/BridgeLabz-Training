@@ -10,8 +10,7 @@ namespace EmployeeWageComputation
     internal class EmployeeUtility : IEmployee
     {
         Employee employee;
-        Random random = new Random();
-
+        private static Random random = new Random();
         public EmployeeUtility(Employee emp)
         {
             employee = emp;
@@ -20,14 +19,14 @@ namespace EmployeeWageComputation
         // UC-1
         public void CheckAttendance()
         {
-            int attendance = random.Next(0, 2);
+            int attendance = random.Next(1, 2);
             Console.WriteLine(attendance == 1 ? "Employee is Present" : "Employee is Absent");
         }
 
         // UC-2
         public void CalculateDailyWage()
         {
-            int attendance = random.Next(0, 2);
+            int attendance = random.Next(1, 2);
 
             if (attendance == 1)
             {
@@ -48,7 +47,7 @@ namespace EmployeeWageComputation
 
             if (empType == 1)
                 employee.WorkingHours = 8;
-            else if (empType == 2)
+            else if (empType == 0)
                 employee.WorkingHours = 4;
             else
                 employee.WorkingHours = 0;
@@ -64,8 +63,8 @@ namespace EmployeeWageComputation
 
             switch (empType)
             {
-                case 1: employee.WorkingHours = 8; break;
-                case 2: employee.WorkingHours = 4; break;
+                case 0: employee.WorkingHours = 8; break;
+                case 1: employee.WorkingHours = 4; break;
                 default: employee.WorkingHours = 0; break;
             }
 
