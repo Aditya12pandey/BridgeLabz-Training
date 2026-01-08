@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EmployeeWageComputation
 {
-    internal class EmployeeUtility: IEmployee
+    
+    internal class EmployeeUtility : IEmployee
     {
         Employee employee;
         Random random = new Random();
@@ -25,11 +26,9 @@ namespace EmployeeWageComputation
 
             int attendance = random.Next(0, 2);
 
-            Console.WriteLine("\n Attendance Status ");
-            if (attendance == 1)
-                Console.WriteLine(" Employee is Present");
-            else
-                Console.WriteLine(" Employee is Absent");
+            Console.WriteLine(attendance == 1
+                ? " Employee is Present"
+                : " Employee is Absent");
         }
 
         // UC-2
@@ -46,18 +45,43 @@ namespace EmployeeWageComputation
                 employee.WorkingHours = 8;
                 employee.DailyWage = employee.WorkingHours * employee.WagePerHour;
 
-                Console.WriteLine("\n Employee is Present");
-                Console.WriteLine("Working Hours : " + employee.WorkingHours);
-                Console.WriteLine("Daily Wage    : " + employee.DailyWage);
+                Console.WriteLine("Employee is Present");
+                Console.WriteLine("Daily Wage : " + employee.DailyWage);
             }
             else
             {
-                employee.DailyWage = 0;
-                Console.WriteLine("\n Employee is Absent");
-                Console.WriteLine("Daily Wage    : 0");
+                Console.WriteLine("Employee is Absent");
+                Console.WriteLine("Daily Wage : 0");
             }
         }
 
+        // UC-3 (NEW)
+        public void CalculatePartTimeWage()
+        {
+            Console.WriteLine("\nEmployee Details ");
+            Console.WriteLine("Employee ID   : " + employee.EmpId);
+            Console.WriteLine("Employee Name : " + employee.EmpName);
 
+            int empType = random.Next(0, 3);
+
+            if (empType == 1)
+            {
+                employee.WorkingHours = 8;
+                Console.WriteLine("Employee Type : Full-Time");
+            }
+            else if (empType == 2)
+            {
+                employee.WorkingHours = 4;
+                Console.WriteLine("Employee Type : Part-Time");
+            }
+            else
+            {
+                employee.WorkingHours = 0;
+                Console.WriteLine("Employee Type : Absent");
+            }
+
+            employee.DailyWage = employee.WorkingHours * employee.WagePerHour;
+            Console.WriteLine("Daily Wage    : " + employee.DailyWage);
+        }
     }
 }
