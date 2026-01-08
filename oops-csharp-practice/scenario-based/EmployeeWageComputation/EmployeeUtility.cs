@@ -21,9 +21,7 @@ namespace EmployeeWageComputation
         public void CheckAttendance()
         {
             int attendance = random.Next(0, 2);
-            Console.WriteLine(attendance == 1
-                ? "Employee is Present"
-                : "Employee is Absent");
+            Console.WriteLine(attendance == 1 ? "Employee is Present" : "Employee is Absent");
         }
 
         // UC-2
@@ -75,13 +73,13 @@ namespace EmployeeWageComputation
             Console.WriteLine("Daily Wage : " + employee.DailyWage);
         }
 
-        // UC-5 
+        // UC-5
         public void CalculateMonthlyWage()
         {
-            int TOTAL_WORKING_DAYS = 20;
+            int TOTAL_DAYS = 20;
             employee.MonthlyWage = 0;
 
-            for (int day = 1; day <= TOTAL_WORKING_DAYS; day++)
+            for (int day = 1; day <= TOTAL_DAYS; day++)
             {
                 int empType = random.Next(0, 3);
 
@@ -92,11 +90,42 @@ namespace EmployeeWageComputation
                     default: employee.WorkingHours = 0; break;
                 }
 
-                employee.DailyWage = employee.WorkingHours * employee.WagePerHour;
-                employee.MonthlyWage += employee.DailyWage;
+                employee.MonthlyWage += employee.WorkingHours * employee.WagePerHour;
             }
 
-            Console.WriteLine("Monthly Wage (20 Days) : " + employee.MonthlyWage);
+            Console.WriteLine("Monthly Wage : " + employee.MonthlyWage);
+        }
+
+        // UC-6 (NEW)
+        public void CalculateWageTillCondition()
+        {
+            int MAX_DAYS = 20;
+            int MAX_HOURS = 100;
+
+            employee.TotalWorkingDays = 0;
+            employee.TotalWorkingHours = 0;
+            employee.MonthlyWage = 0;
+
+            while (employee.TotalWorkingDays < MAX_DAYS &&
+                   employee.TotalWorkingHours < MAX_HOURS)
+            {
+                employee.TotalWorkingDays++;
+
+                int empType = random.Next(0, 3);
+                switch (empType)
+                {
+                    case 1: employee.WorkingHours = 8; break;
+                    case 2: employee.WorkingHours = 4; break;
+                    default: employee.WorkingHours = 0; break;
+                }
+
+                employee.TotalWorkingHours += employee.WorkingHours;
+                employee.MonthlyWage += employee.WorkingHours * employee.WagePerHour;
+            }
+
+            Console.WriteLine("Total Working Days  : " + employee.TotalWorkingDays);
+            Console.WriteLine("Total Working Hours : " + employee.TotalWorkingHours);
+            Console.WriteLine("Total Wage          : " + employee.MonthlyWage);
         }
     }
 }

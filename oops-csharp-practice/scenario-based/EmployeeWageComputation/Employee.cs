@@ -15,5 +15,8 @@ namespace EmployeeWageComputation
         public int WorkingHours { get; set; }
         public int DailyWage { get; set; }
         public int MonthlyWage { get; set; }
+
+        public int TotalWorkingDays { get; set; }
+        public int TotalWorkingHours { get; set; }
     }
 }
