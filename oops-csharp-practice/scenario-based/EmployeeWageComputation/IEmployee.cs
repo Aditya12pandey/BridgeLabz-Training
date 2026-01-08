@@ -12,5 +12,6 @@ namespace EmployeeWageComputation
         void CalculateDailyWage();       // UC-2
         void CalculatePartTimeWage();    // UC-3
         void CalculateWageUsingSwitch(); // UC-4
+        void CalculateMonthlyWage();
     }
 }

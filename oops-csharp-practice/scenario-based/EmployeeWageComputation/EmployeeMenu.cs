@@ -28,11 +28,12 @@ namespace EmployeeWageComputation
 
             IEmployee empUtility = new EmployeeUtility(employee);
 
-            Console.WriteLine("\n MENU ");
-            Console.WriteLine("1. UC-1 Check Attendance");
-            Console.WriteLine("2. UC-2 Calculate Daily Wage");
+            Console.WriteLine("\n====== MENU ======");
+            Console.WriteLine("1. UC-1 Attendance");
+            Console.WriteLine("2. UC-2 Daily Wage");
             Console.WriteLine("3. UC-3 Part-Time Wage");
-            Console.WriteLine("4. UC-4 Wage Using Switch Case");
+            Console.WriteLine("4. UC-4 Switch Case Wage");
+            Console.WriteLine("5. UC-5 Monthly Wage");
             Console.Write("Enter your choice: ");
 
             int choice = Convert.ToInt32(Console.ReadLine());
@@ -43,10 +44,9 @@ namespace EmployeeWageComputation
                 case 2: empUtility.CalculateDailyWage(); break;
                 case 3: empUtility.CalculatePartTimeWage(); break;
                 case 4: empUtility.CalculateWageUsingSwitch(); break;
+                case 5: empUtility.CalculateMonthlyWage(); break;
                 default: Console.WriteLine("Invalid Choice"); break;
             }
         }
     }
-
-
 }

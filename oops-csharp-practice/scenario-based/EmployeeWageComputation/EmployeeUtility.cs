@@ -20,9 +20,6 @@ namespace EmployeeWageComputation
         // UC-1
         public void CheckAttendance()
         {
-            Console.WriteLine("\nEmployee ID   : " + employee.EmpId);
-            Console.WriteLine("Employee Name : " + employee.EmpName);
-
             int attendance = random.Next(0, 2);
             Console.WriteLine(attendance == 1
                 ? "Employee is Present"
@@ -38,12 +35,10 @@ namespace EmployeeWageComputation
             {
                 employee.WorkingHours = 8;
                 employee.DailyWage = employee.WorkingHours * employee.WagePerHour;
-                Console.WriteLine("Employee is Present");
                 Console.WriteLine("Daily Wage : " + employee.DailyWage);
             }
             else
             {
-                Console.WriteLine("Employee is Absent");
                 Console.WriteLine("Daily Wage : 0");
             }
         }
@@ -54,50 +49,54 @@ namespace EmployeeWageComputation
             int empType = random.Next(0, 3);
 
             if (empType == 1)
-            {
                 employee.WorkingHours = 8;
-                Console.WriteLine("Full-Time Employee");
-            }
             else if (empType == 2)
-            {
                 employee.WorkingHours = 4;
-                Console.WriteLine("Part-Time Employee");
-            }
             else
-            {
                 employee.WorkingHours = 0;
-                Console.WriteLine("Employee is Absent");
-            }
 
             employee.DailyWage = employee.WorkingHours * employee.WagePerHour;
             Console.WriteLine("Daily Wage : " + employee.DailyWage);
         }
 
-        // UC-4 
+        // UC-4
         public void CalculateWageUsingSwitch()
         {
             int empType = random.Next(0, 3);
 
             switch (empType)
             {
-                case 1:
-                    employee.WorkingHours = 8;
-                    Console.WriteLine("Employee Type : Full-Time");
-                    break;
-
-                case 2:
-                    employee.WorkingHours = 4;
-                    Console.WriteLine("Employee Type : Part-Time");
-                    break;
-
-                default:
-                    employee.WorkingHours = 0;
-                    Console.WriteLine("Employee Type : Absent");
-                    break;
+                case 1: employee.WorkingHours = 8; break;
+                case 2: employee.WorkingHours = 4; break;
+                default: employee.WorkingHours = 0; break;
             }
 
             employee.DailyWage = employee.WorkingHours * employee.WagePerHour;
-            Console.WriteLine("Daily Wage    : " + employee.DailyWage);
+            Console.WriteLine("Daily Wage : " + employee.DailyWage);
+        }
+
+        // UC-5 
+        public void CalculateMonthlyWage()
+        {
+            int TOTAL_WORKING_DAYS = 20;
+            employee.MonthlyWage = 0;
+
+            for (int day = 1; day <= TOTAL_WORKING_DAYS; day++)
+            {
+                int empType = random.Next(0, 3);
+
+                switch (empType)
+                {
+                    case 1: employee.WorkingHours = 8; break;
+                    case 2: employee.WorkingHours = 4; break;
+                    default: employee.WorkingHours = 0; break;
+                }
+
+                employee.DailyWage = employee.WorkingHours * employee.WagePerHour;
+                employee.MonthlyWage += employee.DailyWage;
+            }
+
+            Console.WriteLine("Monthly Wage (20 Days) : " + employee.MonthlyWage);
         }
     }
 }
