@@ -10,7 +10,9 @@ namespace EmployeeWageComputation
     {
         public int EmpId { get; set; }
         public string EmpName { get; set; }
-
+        public int WagePerHour { get; set; }
+        public int WorkingHours { get; set; }
+        public int DailyWage { get; set; }
 
     }
 }

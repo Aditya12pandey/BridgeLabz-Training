@@ -8,6 +8,7 @@ namespace EmployeeWageComputation
 {
     internal interface IEmployee
     {
-        void CheckAttendance();   // UC-1
+        void CheckAttendance();      // UC-1
+        void CalculateDailyWage();   // UC-2
     }
 }

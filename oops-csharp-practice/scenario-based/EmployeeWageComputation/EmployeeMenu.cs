@@ -10,7 +10,8 @@ namespace EmployeeWageComputation
     {
         public void ShowMenu()
         {
-            Console.WriteLine("\n Employee Details ");
+   
+             Console.WriteLine("\n Enter Employee Details ");
 
             Console.Write("Enter Employee ID   : ");
             int empId = Convert.ToInt32(Console.ReadLine());
@@ -18,16 +19,21 @@ namespace EmployeeWageComputation
             Console.Write("Enter Employee Name : ");
             string empName = Console.ReadLine();
 
+            Console.Write("Enter Wage Per Hour : ");
+            int wagePerHour = Convert.ToInt32(Console.ReadLine());
+
             Employee employee = new Employee
             {
                 EmpId = empId,
-                EmpName = empName
+                EmpName = empName,
+                WagePerHour = wagePerHour
             };
 
             IEmployee empUtility = new EmployeeUtility(employee);
 
             Console.WriteLine("\n MENU ");
-            Console.WriteLine("1. Check Employee Attendance (UC-1)");
+            Console.WriteLine("1. UC-1 Check Employee Attendance");
+            Console.WriteLine("2. UC-2 Calculate Daily Wage");
             Console.Write("Enter your choice: ");
 
             int choice = Convert.ToInt32(Console.ReadLine());
@@ -36,11 +42,15 @@ namespace EmployeeWageComputation
             {
                 case 1:
                     empUtility.CheckAttendance();
-                    break;
+                break;
+
+                case 2:
+                    empUtility.CalculateDailyWage();
+                break;
 
                 default:
-                    Console.WriteLine("❌ Invalid choice");
-                    break;
+                    Console.WriteLine(" Invalid Choice");
+                break;
             }
         }
     }
