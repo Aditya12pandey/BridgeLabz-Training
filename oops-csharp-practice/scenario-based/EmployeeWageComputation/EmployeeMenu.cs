@@ -6,57 +6,47 @@ using System.Threading.Tasks;
 
 namespace EmployeeWageComputation
 {
-public sealed class EmployeeMenu
-{
-    public void ShowMenu()
+    public sealed class EmployeeMenu
     {
-        Console.WriteLine("\n Enter Employee Details ");
-
-        Console.Write("Enter Employee ID   : ");
-        int empId = Convert.ToInt32(Console.ReadLine());
-
-        Console.Write("Enter Employee Name : ");
-        string empName = Console.ReadLine();
-
-        Console.Write("Enter Wage Per Hour : ");
-        int wagePerHour = Convert.ToInt32(Console.ReadLine());
-
-        Employee employee = new Employee
+        public void ShowMenu()
         {
-            EmpId = empId,
-            EmpName = empName,
-            WagePerHour = wagePerHour
-        };
+            Console.Write("Enter Employee ID   : ");
+            int empId = Convert.ToInt32(Console.ReadLine());
 
-        IEmployee empUtility = new EmployeeUtility(employee);
+            Console.Write("Enter Employee Name : ");
+            string empName = Console.ReadLine();
 
-        Console.WriteLine("\n MENU ");
-        Console.WriteLine("1. UC-1 Check Attendance");
-        Console.WriteLine("2. UC-2 Calculate Daily Wage");
-        Console.WriteLine("3. UC-3 Part-Time Employee Wage");
-        Console.Write("Enter your choice: ");
+            Console.Write("Enter Wage Per Hour : ");
+            int wagePerHour = Convert.ToInt32(Console.ReadLine());
 
-        int choice = Convert.ToInt32(Console.ReadLine());
+            Employee employee = new Employee
+            {
+                EmpId = empId,
+                EmpName = empName,
+                WagePerHour = wagePerHour
+            };
 
-        switch (choice)
-        {
-            case 1:
-                empUtility.CheckAttendance();
-                break;
+            IEmployee empUtility = new EmployeeUtility(employee);
 
-            case 2:
-                empUtility.CalculateDailyWage();
-                break;
+            Console.WriteLine("\n MENU ");
+            Console.WriteLine("1. UC-1 Check Attendance");
+            Console.WriteLine("2. UC-2 Calculate Daily Wage");
+            Console.WriteLine("3. UC-3 Part-Time Wage");
+            Console.WriteLine("4. UC-4 Wage Using Switch Case");
+            Console.Write("Enter your choice: ");
 
-            case 3:
-                empUtility.CalculatePartTimeWage();
-                break;
+            int choice = Convert.ToInt32(Console.ReadLine());
 
-            default:
-                Console.WriteLine(" Invalid Choice");
-                break;
+            switch (choice)
+            {
+                case 1: empUtility.CheckAttendance(); break;
+                case 2: empUtility.CalculateDailyWage(); break;
+                case 3: empUtility.CalculatePartTimeWage(); break;
+                case 4: empUtility.CalculateWageUsingSwitch(); break;
+                default: Console.WriteLine("Invalid Choice"); break;
+            }
         }
     }
-}
+
 
 }
