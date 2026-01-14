@@ -1,85 +1,89 @@
 🚀 BridgeLabz Training
-📅 Day 1 — 18 December 2025
-🎯 What I Learned Today
+This repository contains my daily learning progress and practice work during BridgeLabz Training.
+Each day includes learning goals, tasks completed, and key takeaways.
 
-On Day 1, I focused on:
+📅 18 December 2025
+🎯 Learning Goals
 
-Understanding the basic concepts of C#
+By the end of this day, the focus was to:
 
-Learning an overview of the .NET platform
+💡 Understand the fundamentals of C# and the .NET Framework
 
-Knowing how Git and GitHub are used in real projects
+🔧 Learn the basic Git & GitHub workflow
 
-Creating a proper folder structure for training work
+🗂️ Create and maintain a clean project structure for training
 
-🧑‍💻 Work Done
+🛠️ Activities & Work Completed
 
-Created a new repository on GitHub
+🧑‍💻 Created a new GitHub repository
 
-Connected the repository with my local system
+🔗 Connected the repository with the local system
 
-Initialized Git using the git init command
+📂 Initialized Git using git init
 
-Organized folders in a clean and simple structure
+🗃️ Designed and organized a structured folder hierarchy
 
-Learned the basics of C# and .NET
+📘 Learned the basics and background of C# and .NET
 
-Compared C# with Java
+⚖️ Compared C# vs Java
 
-Understood the difference between a compiler and an interpreter
+🔍 Understood the difference between Compiler and Interpreter
 
-Practiced some basic C# programs
+❓ Solved and discussed 10 basic C# programming questions
 
-🧠 Key Points
+🧠 Key Takeaways
 
-Git helps in tracking code changes
+Importance of version control in real-world projects
 
-.NET is useful for building backend applications
+Role of .NET in application development
 
-A good folder structure makes the project easy to manage
+How structured repositories improve maintainability
 
-📌 This day helped me build a strong base for upcoming training sessions.
+📅 19 December 2025
+🎯 Learning Goals
 
+By the end of this day, the focus was to:
 
-📅 Day 2 — 19 December 2025
-🚀 Learning Summary
+🧩 Understand the .NET Framework architecture
 
-Studied the .NET Framework architecture and gained a clear understanding of its core components.
+📘 Strengthen fundamentals of C# programming
 
-Learned the fundamentals of C# programming, including:
+🧠 Improve logical thinking through problem-solving
 
-Data Types
+🛠️ Activities & Work Completed
 
-Access Modifiers
+🏗️ Studied core components of the .NET Framework
 
-Operators
+📚 Learned C# fundamentals: Operators, Access Modifiers, Data Types
 
-Solved 16 Level-1 coding problems to strengthen basic programming concepts.
+✅ Solved 16 Level-1 coding problems
 
-Practiced 12 Level-2 problem-solving questions to develop deeper understanding and improve logical thinking.
+🔍 Practiced 12 Level-2 problem-solving questions
 
-🎯 Key Outcomes
+🧠 Key Takeaways
 
-Built a strong foundation in C# fundamentals
+Clear understanding of how .NET applications work internally
 
-Gained clarity on the working of the .NET Framework
+Stronger grasp of C# syntax and operators
 
-Improved problem-solving and analytical skills
+Improved confidence in solving beginner to intermediate problems
 
-📅 Day 3 — 20 December 2025
-🎯 Focus of the Day
+🗓️ 20 December 2025
+🎯 Goals Accomplished Today
 
-On Day 3, my learning mainly revolved around:
+Today’s learning was focused on:
 
-Understanding how access control works in C#
+📚 Understanding Access Control in C#
 
-Strengthening previously learned core C# concepts
+🔄 Revisiting previously learned C# fundamentals
 
-Improving coding skills through practice-based learning
+🔍 Exploring C# reference and learning materials
 
-🛠️ Work Completed
+🧩 Practicing problem-solving with LeetCode
 
-Studied different Access Modifiers in C#, such as:
+⚙️ Tasks Completed
+
+🛡️ Studied C# Access Modifiers, including:
 
 public
 
@@ -89,484 +93,763 @@ protected
 
 internal
 
-Revised important C# basics:
+🔄 Revised key C# concepts:
 
-Data types
+Data Types
 
 Operators
 
-Program structure
+Basic syntax and program structure
 
-Explored online C# learning resources and documentation
+📖 Read C# documentation and study resources to strengthen understanding
 
-Practiced coding problems on LeetCode to enhance logic building
+🧩 Solved 8 LeetCode questions to improve coding and logical skills
 
-🧠 Key Learnings
-
-Access modifiers control scope and visibility of data
-
-Revision helped in clearing earlier doubts
-
-Regular problem-solving improves confidence and speed
-
-📅 Day 4 — 22 December 2025
-🎯 Learning Objectives
+📅 22 December 2025
+🎯 Learning Goals
 
 Understand Control Flow in C#
 
-Learn how programs make decisions and repeat tasks
+Learn different Control Flow Statements
 
-Apply control flow concepts in coding problems
+Solve coding problems using control flow
 
-🔁 Control Flow in C#
+🔀 What is Control Flow?
 
-Control flow defines how a program executes step by step, including:
+Control Flow determines the order of execution of statements in a program:
 
-Decision making
+Make decisions
 
-Looping
+Repeat operations
 
-Jumping between statements
+Branch logic based on conditions
 
-🧩 Concepts Covered
+🛠️ Types of Control Flow Statements
 
-Conditional Statements: if, if-else, else-if, switch
+Conditional Statements: if, if-else, else if, switch
 
-Looping Statements: for, while, do-while, foreach
+Loops: for, while, do-while, foreach
 
-Jump Statements: break, continue, return
+Jump Statements: break, continue, return.
 
-✅ Outcome
+✅ Key Takeaways
 
-Better understanding of program execution logic
+Control flow guides how and when code executes
 
-Improved ability to write condition-based programs
+Conditionals handle decision-making
 
-Stronger logical thinking using loops
+Loops reduce redundancy
 
-📅 Day 5 — 23 December 2025
-🎯 Goals for the Day
+Jump statements control execution flow
 
-Learn about arrays in C#
+🚀 Outcome
 
-Understand array declaration and initialization
+Improved understanding of program execution
 
-Solve problems using arrays
+Better logical thinking and problem-solving skills
 
-📚 What I Learned
+💡 Learning Outcomes
 
-An array is a data structure used to store multiple values of the same type in a single variable.
+🎯 Developed a clear understanding of scope and visibility using access modifiers
 
-🔹 Topics Covered
+🔁 Reinforced foundational knowledge through concept revision
 
-One-Dimensional Arrays
+🧠 Improved problem-solving ability with consistent LeetCode practice
 
-Two-Dimensional Arrays
+🚀 Built stronger confidence by balancing theory and hands-on coding
 
-Using loops to access and manipulate array elements
-
-🧠 Key Takeaways
-
-Arrays make data handling easier and cleaner
-
-Loop concepts are essential for array operations
-
-1-D and 2-D arrays are used for different scenarios
-
-📅 Day 6 — 24 December 2025
-🎯 Learning Objectives
-
-Understand methods in C#
-
-Learn how to create and use methods
-
-Practice coding using methods
-
-📘 Methods in C#
-
-Methods are reusable blocks of code designed to perform specific tasks.
-They help in writing organized, readable, and maintainable code.
-
-🔹 Concepts Practiced
-
-Methods with and without return values
-
-Methods with parameters
-
-Calling methods from the Main method
-
-🧠 Key Learnings
-
-Methods reduce repetition in code
-
-Parameters increase flexibility
-
-Return values help in processing results
-
-Proper use of methods improves code structure
-
-
-📅 Day 7 — 23 December 2025
-🎯 Focus Areas
-
-The main focus of Day 7 was to:
+📅 23 December 2025
+🎯 Learning Goals
 
 Understand arrays in C#
 
-Practice logic building using arrays
+Learn array initialization
 
-Review learning progress till now
+Work with 1-D and 2-D arrays
 
-🛠️ Work Done
+Solve problems using arrays
 
-Learned arrays in C#, including:
+📚 Arrays Overview
 
-Declaration
+An array stores multiple values of the same data type and is accessed using indexes.
 
-Initialization
+🔹 Types of Arrays
 
-Traversal using loops
+1-D Array: Stores data in a single sequence
 
-Solved multiple 1-D array problems such as:
-
-Searching elements
-
-Iteration
-
-Basic array operations
-
-Practiced 2-D array problems, focusing on:
-
-Row and column traversal
-
-Applying logic using nested loops
-
-Reviewed all previously covered topics and reflected on strengths and improvement areas
+2-D Array: Stores data in rows and columns
 
 🧠 Key Takeaways
 
-Arrays are essential for handling multiple values efficiently
+Arrays simplify handling multiple values
 
-Loop concepts are crucial for array-based problem solving
+Loops are essential for array processing
 
-Regular review helps in identifying gaps in understanding
+1-D and 2-D arrays suit different data needs
 
-📅 Day 8 — 24 December 2025
-🎯 Learning Objectives
+📅 24 December 2025
+🎯 Learning Goals
 
-Learn how methods work in C#
+Understand methods in C#
 
-Write reusable and modular code
+Learn how to define and call methods
 
-Apply methods in real-life and coding problems
+Use parameters and return values
 
-🛠️ Activities Completed
+Solve problems using methods
 
-Studied methods in C#, including:
+📚 Methods Overview
 
-Method declaration and definition
+A method is a block of code that performs a specific task.
+Methods help in organizing code, improving readability, and promoting reusability.
 
-Parameters and return types
+🔹 Types of Methods
 
-Scope of methods
+Void Methods: Perform an action but do not return a value
 
-Solved problems using methods to:
+Return Type Methods: Perform an action and return a value
 
-Improve code reusability
+Methods with Parameters: Accept input values to process data
 
-Enhance readability
+Methods without Parameters: Execute tasks without external input
 
-Practiced LeetCode problems using methods
+🧠 Key Takeaways
 
-Worked on scenario-based questions to apply methods in practical situations
-
-🧠 Key Learnings
-
-Methods help reduce code duplication
+Methods reduce code duplication
 
 Parameters make methods flexible
 
-Return values help in processing results effectively
+Return values help in processing results
 
-📅 Day 9 — 26 December 2025
-🎯 Topics Covered
+Methods improve code structure and maintainability
 
-Strings in C#
+📅 26 December 2025
+🎯 Learning Goals
 
-Built-in string methods
+Understand strings in C#
 
-Date and Time handling in C#
+Learn string methods
 
-Scenario-based implementation
+Practice string-based logic
 
-🛠️ Work Done
+📚 Strings Overview
 
-Learned about strings, their types, and immutability
+A string is a sequence of characters used to store text.
+Strings in C# are immutable.
 
-Practiced various string built-in methods
+🔹 Topics Covered
 
-Solved multiple string-based problems
+String declaration & initialization
 
-Explored DateTime features and solved problems based on:
+Common string methods
 
-Date calculations
+Character traversal
 
-Time operations
+String manipulation
 
-Built a scenario-based game, applying:
+🧠 Key Takeaways
 
-Control flow
+Strings are immutable
 
-Arrays
+Built-in methods simplify text processing
+
+String logic is essential for real-world applications
+
+📅 29 December 2025
+🎯 Learning Goals
+
+Understand the basics of Object-Oriented Programming (OOP)
+
+Learn how OOP improves code structure
+
+Relate OOP with previously learned C# concepts
+
+📚 Introduction to OOP
+
+Object-Oriented Programming (OOP) organizes programs using classes and objects, making code modular, reusable, and easy to maintain.
+
+🔹 Core OOP Concepts (Overview)
+
+Class: Blueprint that defines data and behavior
+
+Object: Instance of a class
+
+Encapsulation: Binding data and methods together
+
+Abstraction: Showing only essential details
+
+🔗 Applying Previous Concepts in OOP
+
+Variables become class fields
+
+Methods become class behaviors
+
+Arrays and strings are handled inside classes
+
+Programs are structured into logical units
+
+🧠 Key Takeaways
+
+OOP improves code organization and readability
+
+Classes group related data and logic
+
+Solved scenario-based problems using previously learned concepts
+
+📅 30 December 2025
+🎯 Learning Goals
+
+Understand the concept of constructors in C#
+
+Learn the basics and purpose of constructors
+
+Identify different types of constructors
+
+Understand objects and instances in OOP
+
+📚 Constructors Overview
+
+A constructor is a special member of a class that is automatically invoked when an object is created.
+Its primary role is to initialize class data members.
+
+🔹 Basics of Constructors
+
+Constructor name is the same as the class name
+
+It does not return any value
+
+It runs automatically during object creation
+
+Used to set initial values for fields
+
+🔹 Types of Constructors
+
+Default Constructor: Initializes objects with default values
+
+Parameterized Constructor: Initializes objects with user-defined values
+
+Constructor Overloading: Multiple constructors with different parameters in the same class
+
+🔹 Objects and Instances
+
+A class is a blueprint
+
+An object (instance) is a real entity created from a class
+
+Each instance has its own separate data
+
+Constructors run once per object creation
+
+🧠 Key Takeaways
+
+Constructors ensure objects start in a valid state
+
+They improve clarity, safety, and structure of code
+
+Constructor types offer flexibility in object creation
+
+Understanding instances is key to mastering OOP
+
+📅 31 December 2025
+🎯 Learning Goals
+
+Solve scenario-based problems
+
+Work on Bank Manager & Math Utility scenarios
+
+Design an Invoice Generator
+
+Understand basics of this, static, sealed, and is operator
+
+🛠️ Activities & Work Completed
+🏦 Scenario 1: Bank Manager & Math Utility
+
+Solved scenario-based problems using:
 
 Methods
 
-Strings
+Variables
 
-DateTime concepts
+Conditional statements
+
+Used static methods for Math Utility operations
+
+Focused on logical flow and correctness
+
+🧾 Scenario 2: Invoice Generator
+
+Built an Invoice Generator to:
+
+Accept item details
+
+Calculate total amount
+
+Practiced clean input–process–output flow
+
+📚 Concepts Learned
+
+this: Refers to the current instance
+
+static: Used for shared methods and data
+
+sealed: Prevents inheritance
+
+is Operator: Used for type checking
 
 🧠 Key Takeaways
 
-Strings are immutable and require careful handling
+Scenario-based problems improve logical thinking
 
-Built-in methods simplify string manipulation
+static methods are useful for utility logic
 
-DateTime is useful for real-world applications
+Clear understanding of important C# keywords
 
-📅 Day 10 — 29 December 2025
+Strong foundation for upcoming OOP concepts
+
+📅 1 January 2026
 🎯 Learning Goals
 
-Get introduced to Object-Oriented Programming (OOPs)
+Understand Class vs Object
 
-Understand classes and objects
+Learn basics of UML diagrams
 
-Learn the difference between static and instance members
+Solve a scenario-based problem
 
-🛠️ Activities Completed
+🛠️ Work Completed
+📘 Class vs Object
 
-Learned OOP basics:
+Class: blueprint defining data and behavior
 
-Classes
+Object: instance created from a class
 
-Objects
+📐 UML Basics
 
-Solved scenario-based problems using OOP concepts
+Class Diagram: system structure
 
-Practiced using:
+Object Diagram: runtime state
 
-Static variables and methods
+Sequence Diagram: execution flow
 
-Instance variables and methods
+☕ Scenario: Cafeteria Menu
 
-Improved code structure using OOP principles
+Used arrays to store menu items and prices
 
-🧠 Key Learnings
+Used methods to:
 
-OOP helps organize code efficiently
+Display menu
 
-Static members belong to the class
+Handle user choice
 
-Instance members work with objects
-
-📅 Day 11 — 30 December 2025
-🎯 Focus of the Day
-
-Working on real-life scenario-based projects
-
-Learning constructors in C#
-
-Implementing role-based access logic
-
-🛠️ Work Done
-
-Developed a Quiz Application:
-
-Teachers can manage questions
-
-Students can attempt quizzes
-
-Built a Library Management System with core functionalities
-
-Learned and practiced constructors in C#
-
-Implemented role-based login systems in applications
+Calculate total bill
 
 🧠 Key Takeaways
 
-Constructors help initialize objects properly
+Clear distinction between class and object
 
-Scenario-based projects improve real-world understanding
+UML helps visualize design and flow
 
-Role-based systems enhance application security and structure
+Arrays manage data, methods manage logic
 
-📅 Day 11 — 30 December 2025
+📅 2 January 2026
+🎯 Learning Goals
 
-🎯 Focus of the Day
-Working on real-life scenario-based projects
-Learning constructors in C#
-Implementing role-based access logic
+Understand the concept of Inheritance in C#
 
-🛠️ Work Done
-Developed a Quiz Application:
+Learn why inheritance is used in software design
 
-Teachers can manage questions
+Solve scenario-based problems
 
-Students can attempt quizzes
+Strengthen logic using arrays and control flow
 
-Built a Library Management System with core functionalities
-Learned and practiced constructors in C#
-Implemented role-based login systems in applications
+📚 Concept Learned: Inheritance
+
+Inheritance allows one class to reuse properties and methods of another
+
+Helps reduce code duplication
+
+Improves structure and maintainability
+
+Learned at a conceptual level
+
+🛠️ Activities & Work Completed
+🚌 Scenario 1: Bus Route Tracker
+
+Implemented a bus tracking system using:
+
+Arrays to store:
+
+Bus stop names
+
+Distance between stops
+
+Passenger travel details
+
+Program flow:
+
+Bus reaches a stop
+
+Passengers deboard at their destination
+
+Fare calculated based on distance travelled
+
+New passengers board the bus
+
+Focused on:
+
+Sequential execution
+
+Conditional logic
+
+Data handling using arrays
+
+🎲 Scenario 2: Lucky Draw System
+
+Built a lucky draw program using:
+
+Arrays to store participant names
+
+Random number generation
+
+Used program logic to:
+
+Register participants
+
+Select a random winner
+
+Display results
 
 🧠 Key Takeaways
-Constructors help initialize objects properly
-Scenario-based projects improve real-world understanding
-Role-based systems enhance application security and structure
 
-📅 Day 12 — 31 December 2025
+Conceptual clarity of inheritance
 
-🎯 Focus of the Day
-Understanding method-based programming using real-life scenarios
-Working with strings and string manipulation
-Learning important C# keywords and operators
+Arrays help manage related data efficiently
 
-🛠️ Work Done
-Developed a Bank Account Manager:
+Control flow drives real-world simulations
 
-Implemented Deposit, Withdraw, and CheckBalance methods
+Scenario-based practice improves problem-solving skills
 
-Added logic to prevent overdraft
+📅 5 January 2026
+🎯 Learning Goals
 
-Created a Math Utility class with methods for:
+Learn Encapsulation, Abstraction, and Interfaces in C#
 
-Factorial calculation
+Apply OOP concepts to scenario-based problems
 
-Prime number check
+📚 Concepts Learned
 
-GCD of two numbers
+Encapsulation: Data hiding using private fields and public properties (get/set)
 
-Nth Fibonacci number
+Abstraction: Focus on what an object does using abstract classes and interfaces
 
-Tested all methods with edge cases
+Interface: Defines a contract that implementing classes must follow
 
-Built a Freelancer Invoice Generator:
+🛠️ Activities & Work Completed
+🏥 Hospital Patient Management System
 
-Parsed invoice strings to extract tasks and amounts
+Used encapsulation for patient data
 
-Calculated total invoice amount using methods
+Implemented patient types using inheritance
 
-Studied core C# concepts:
+Applied IPayable interface for bill calculation
 
-this keyword
+🚗 Vehicle Rental Application
 
-static and sealed keywords
+Created an abstract Vehicle class
 
-is operator
+Implemented vehicle types (Car, Bike, Truck)
 
 🧠 Key Takeaways
-Methods help write reusable and structured code
-String manipulation is essential for real-world applications
-Understanding C# keywords strengthens OOP concepts
 
+Encapsulation protects data
 
-:
+Abstraction reduces complexity
 
-📅 Day 13 – January 1, 2026
-🧩 Learning Focus
+Interfaces improve code structure
 
-Scenario-driven problem solving using design thinking
+OOP concepts fit real-world applications
 
-Object modeling for real-world systems
+📅 6 January 2026
+🎯 Learning Goals
 
-Understanding and creating class diagrams
+Strengthen problem-solving using scenario-based programs
 
-Learning sequence diagrams for object interaction flow
+Practice OOP concepts with real-world examples
 
-✅ Work Completed
+Improve logic using arrays and control flow
 
-Solved multiple real-life scenario questions to improve logical design skills
+🛠️ Activities & Work Completed
+🐦 Scenario 1: Bird Sanctuary System
 
-Studied how to convert real-world problems into object models
+Designed a bird sanctuary application using:
 
-Designed solutions using class diagrams to represent relationships
+Classes to represent birds
 
-Practiced sequence diagrams to visualize execution flow between objects
+Arrays to store bird details
 
-📅 Day 14 – January 2, 2026
-🧩 Learning Focus
+Program features:
 
-Inheritance in C# and its real-world importance
+Add different bird types
 
-Exploring types of inheritance:
+Display bird information
 
-Single inheritance
+Demonstrate bird behaviors
 
-Multilevel inheritance
+Focused on:
 
-Hierarchical inheritance
+Object creation
 
-Applying inheritance through scenario-based programs
+Data organization
 
-✅ Work Completed
+Clean program flow
 
-Implemented inheritance concepts using C#
+📞 Scenario 2: Call Log Manager
 
-Practiced problems covering all major inheritance types
+Built a call log management system using:
 
-Built mini applications such as:
+Arrays to store call details (number, message, time)
 
-Bus Route Tracker for managing routes and distances
+Program logic included:
 
-Festival Lucky Draw based on conditional logic
+Add call records
 
-📅 Day 15 – January 3, 2026
-🧩 Learning Focus
+Display call history
 
-Complete revision of OOP concepts
+search by keyword
 
-Practice sessions to strengthen fundamentals
+sort by timestamp
 
-✅ Work Completed
+Focused on:
 
-Revised all previously learned OOP topics
+Conditional logic
 
-Solved multiple practice questions to clear doubts
+Iteration using loops
 
-Improved confidence in applying OOP concepts
+Real-world data handling
 
-📅 Day 16 – January 5, 2026
-🧩 Learning Focus
+🧠 Key Takeaways
 
-Encapsulation for data protection
+Scenario-based programs improve logical thinking
 
-Abstraction for simplifying complex systems
+Arrays help manage structured data efficiently
 
-Polymorphism (compile-time vs runtime)
+Real-life systems can be modeled using simple OOP concepts
 
-Abstract classes and interfaces
+Practice enhances confidence in program design
 
-Applying OOP pillars in real-life scenarios
+📅 7 January 2026
+🎯 Learning Goals
 
-✅ Work Completed
+Learn the basics of Data Structures
 
-Learned and practiced all major OOP pillars
+Understand Linked Lists and their working
 
-Implemented abstract classes and interfaces in C#
+Solve a scenario-based problem using structured logic
 
-Solved two complete scenario-based problems using these concepts
+🛠️ Activities & Work Completed
+🔗 Topic: Introduction to Linked List
 
-📅 Day 17 – January 6, 2026
-🧩 Learning Focus
+Learned what data structures are and why they are important
 
-Detailed revision of all OOP concepts
+Studied Linked List as a dynamic data structure
 
-Advanced scenario-based problem solving
+Understood:
 
-Review and feedback discussion
+Node structure (data and next reference)
 
-✅ Work Completed
+Head pointer and traversal
 
-Revised OOP concepts thoroughly
+Identified advantages like dynamic size and efficient insertions
 
-Solved several real-world scenario questions
+💼 Scenario: Employee Wage Computation
 
-Shared learning progress and received mentor feedback
+Designed an employee wage computation program
+
+Implemented logic for:
+
+Employee attendance
+
+Daily and monthly wage calculation
+
+Part-time and full-time scenarios
+
+Focused on:
+
+Conditional logic
+
+Real-world problem modeling
+
+🧠 Key Takeaways
+
+Linked Lists allow flexible memory usage
+
+Scenario-based problems improve logic building
+
+Proper data structure selection simplifies problem-solving
+
+📅 8 January 2026
+🎯 Learning Goals
+
+Learn Stack, Queue, HashMap, and HashSet
+
+Apply data structures to a real-world scenario
+
+🛠️ Activities & Work Completed
+📚 Topic: Stack, Queue, HashMap, HashSet
+
+Studied Stack (LIFO) and Queue (FIFO)
+
+Implemented basic operations for both
+
+Learned HashMap for key–value storage
+
+Learned HashSet for unique data handling
+
+🏠 Scenario: Smart Home Automation
+
+Built a basic smart home system
+
+Controlled devices like Light, Fan, and AC
+
+Managed device states (ON/OFF)
+
+🧠 Key Takeaways
+
+Data structures simplify real-world system design
+
+Hash-based collections improve performance
+
+Scenario-based learning improves problem-solving
+
+📅 9 January 2026
+🎯 Learning Goals
+
+Understand and implement sorting algorithms
+
+Apply sorting logic in real-world scenarios
+
+🛠️ Activities & Work Completed
+📚 Topic: Sorting Algorithms
+
+Learned basic sorting techniques:
+
+Bubble Sort
+
+Selection Sort
+
+Insertion Sort
+
+Understood how sorting improves data processing
+
+Practiced sorting using arrays and control flow
+
+🏧 Scenario 1: ATM Dispenser System
+
+Designed an ATM dispenser simulation
+
+Managed currency notes and denominations
+
+Implemented logic to:
+
+Dispense correct notes
+
+Validate withdrawal amount
+
+🏃 Scenario 2: Fit Tracker System
+
+Built a fit tracker application
+
+Managed user activity data (calories)
+
+🧠 Key Takeaways
+
+Sorting algorithms organize data efficiently
+
+Proper algorithm choice improves performance
+
+Scenario-based practice strengthens understanding
+
+📅 12 January 2026
+🎯 Learning Goals
+
+Understand efficient string handling in C#
+
+Learn and implement searching algorithms
+
+Apply concepts through scenario-based problems
+
+🛠️ Activities & Work Completed
+📚 Topic 1: StringBuilder
+
+Learned about StringBuilder and its advantages over string
+
+Understood:
+
+Mutable nature of StringBuilder
+
+Performance benefits in repeated string modifications
+
+📚 Topic 2: Searching Algorithms
+
+Studied searching techniques:
+
+Linear Search
+
+Binary Search
+
+Understood:
+
+Time complexity differences
+
+Use cases for each algorithm
+
+Implemented searching using arrays and loops
+
+🏭 Scenario 1: Metal Factory – Pipe Cutting System
+
+Designed a pipe cutting system for a metal factory
+
+Managed available pipe sizes and price charts
+
+Implemented logic to:
+
+Find suitable pipe sizes
+
+Handle nearest available size when exact size is not present
+
+Calculate total cost based on cuts
+
+🪑 Scenario 2: Custom Furniture Manufacturing
+
+Built a custom furniture manufacturing system
+
+Managed wooden rods and furniture dimensions
+
+Implemented logic to:
+
+Validate raw material availability
+
+Calculate remaining material after cutting
+
+Ensure efficient material utilization
+
+💰 Scenario 3: Loan Buddy System
+
+Designed a loan assistance application
+
+Managed user loan details and eligibility criteria
+
+Implemented logic to:
+
+Validate loan amount
+
+Display suitable loan options
+
+🧠 Key Takeaways
+
+StringBuilder improves performance in string-heavy operations
+
+Linear Search is simple but less efficient for large data
+
+Binary Search is faster but requires sorted data
+
+Real-world scenarios help connect theory with practical use
