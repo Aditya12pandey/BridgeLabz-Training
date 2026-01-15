@@ -1,0 +1,46 @@
+﻿using System;
+
+public class AddressBookMain
+{
+	public static void Main(string[] args)
+	{
+        Console.WriteLine("===================================");
+        Console.WriteLine("   Welcome to Address Book Program  ");
+        Console.WriteLine("===================================");
+
+        Console.Write("Enter maximum contacts you want to store: ");
+        int size = Convert.ToInt32(Console.ReadLine());
+
+        AddressBook addressBook = new AddressBook(size);
+
+        while (true)
+        {
+            Console.WriteLine("\n--------- MENU ---------");
+            Console.WriteLine("1. Add Contact");
+            Console.WriteLine("2. Display All Contacts");
+            Console.WriteLine("3. Exit");
+            Console.Write("Enter your choice: ");
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+
+            switch (choice)
+            {
+                case 1:
+                    addressBook.AddContact();
+                    break;
+
+                case 2:
+                    addressBook.DisplayAllContacts();
+                    break;
+
+                case 3:
+                    Console.WriteLine("\n✅ Exiting Address Book Program...");
+                    return;
+
+                default:
+                    Console.WriteLine("\n❌ Invalid Choice! Please try again.");
+                    break;
+            }
+        }
+    }
+}

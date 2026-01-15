@@ -31,7 +31,7 @@ namespace AddressBookSystem
         // Display contact details
         public void Display()
         {
-            Console.WriteLine("----- Contact Details -----");
+            Console.WriteLine(" Contact Details ");
             Console.WriteLine($"Name   : {FirstName} {LastName}");
             Console.WriteLine($"Address: {Address}");
             Console.WriteLine($"City   : {City}");
@@ -39,7 +39,6 @@ namespace AddressBookSystem
             Console.WriteLine($"Zip    : {Zip}");
             Console.WriteLine($"Phone  : {PhoneNumber}");
             Console.WriteLine($"Email  : {Email}");
-            Console.WriteLine("----------------------------");
         }
     }
 }
