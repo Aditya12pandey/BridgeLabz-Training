@@ -483,6 +483,64 @@ namespace AddressBookSystem
 
             Console.WriteLine("\n Contacts Sorted Alphabetically by Name Successfully!");
         }
+        //  UC11: Sort contacts by City / State / Zip
+        public void SortContactsByCityStateZip()
+        {
+            if (count == 0)
+            {
+                Console.WriteLine("\n No contacts available to sort.");
+                return;
+            }
+
+            Console.WriteLine("\n Sort Menu (UC11) ");
+            Console.WriteLine("1. Sort By City");
+            Console.WriteLine("2. Sort By State");
+            Console.WriteLine("3. Sort By Zip");
+            Console.Write("Enter your choice: ");
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < count - 1; i++)
+            {
+                for (int j = 0; j < count - 1 - i; j++)
+                {
+                    string value1 = "";
+                    string value2 = "";
+
+                    if (choice == 1)
+                    {
+                        value1 = contacts[j].City;
+                        value2 = contacts[j + 1].City;
+                    }
+                    else if (choice == 2)
+                    {
+                        value1 = contacts[j].State;
+                        value2 = contacts[j + 1].State;
+                    }
+                    else if (choice == 3)
+                    {
+                        value1 = contacts[j].Zip;
+                        value2 = contacts[j + 1].Zip;
+                    }
+                    else
+                    {
+                        Console.WriteLine("\n Invalid choice!");
+                        return;
+                    }
+
+                    // Compare and swap
+                    if (string.Compare(value1, value2, StringComparison.OrdinalIgnoreCase) > 0)
+                    {
+                        Contact temp = contacts[j];
+                        contacts[j] = contacts[j + 1];
+                        contacts[j + 1] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("\n Contacts Sorted Successfully!");
+        }
+
 
 
 

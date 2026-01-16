@@ -11,6 +11,6 @@ namespace AddressBookSystem
         void ViewPersonsByCityOrState();
         void CountPersonsByCityAndState();
         void SortContactsByName();
-
+        void SortContactsByCityStateZip();
     }
 }
