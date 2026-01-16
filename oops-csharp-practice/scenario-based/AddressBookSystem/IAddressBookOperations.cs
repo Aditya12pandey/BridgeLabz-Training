@@ -10,6 +10,7 @@ namespace AddressBookSystem
         void SearchPersonByCityOrState();
         void ViewPersonsByCityOrState();
         void CountPersonsByCityAndState();
+        void SortContactsByName();
 
     }
 }

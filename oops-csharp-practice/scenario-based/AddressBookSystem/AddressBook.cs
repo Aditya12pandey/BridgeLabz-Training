@@ -455,6 +455,35 @@ namespace AddressBookSystem
                 Console.WriteLine("\n Invalid choice!");
             }
         }
+        // ✅ UC10: Sort contacts alphabetically by FirstName then LastName
+        public void SortContactsByName()
+        {
+            if (count == 0)
+            {
+                Console.WriteLine("\n No contacts available to sort.");
+                return;
+            }
+
+            for (int i = 0; i < count - 1; i++)
+            {
+                for (int j = 0; j < count - 1 - i; j++)
+                {
+                    string name1 = contacts[j].FirstName + " " + contacts[j].LastName;
+                    string name2 = contacts[j + 1].FirstName + " " + contacts[j + 1].LastName;
+
+                    if (string.Compare(name1, name2, StringComparison.OrdinalIgnoreCase) > 0)
+                    {
+                        // Swap contacts[j] and contacts[j+1]
+                        Contact temp = contacts[j];
+                        contacts[j] = contacts[j + 1];
+                        contacts[j + 1] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("\n Contacts Sorted Alphabetically by Name Successfully!");
+        }
+
 
 
     }
