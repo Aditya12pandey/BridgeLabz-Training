@@ -54,7 +54,24 @@ namespace AddressBookSystem
             Console.WriteLine("\n Contact Added Successfully!");
         }
 
-        //  UC3: Edit contact using name
+        public void AddMultipleContacts()
+        {
+            Console.Write("\nHow many contacts you want to add? : ");
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++)
+            {
+                if (count >= contacts.Length)
+                {
+                    Console.WriteLine("\n Address Book is Full! Cannot add more contacts.");
+                    break;
+                }
+
+                Console.WriteLine($"\n Enter Details for Contact {i} ");
+                AddContact();
+            }
+        }
+
         public void EditContact()
         {
             if (count == 0)
@@ -142,7 +159,6 @@ namespace AddressBookSystem
             contacts[index].Display();
         }
 
-        //  UC4: Delete contact using name
         public void DeleteContact()
         {
             if (count == 0)
@@ -175,7 +191,6 @@ namespace AddressBookSystem
                 return;
             }
 
-            // Shift left
             for (int i = index; i < count - 1; i++)
             {
                 contacts[i] = contacts[i + 1];
