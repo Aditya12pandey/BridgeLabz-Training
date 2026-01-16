@@ -359,6 +359,103 @@ namespace AddressBookSystem
                 Console.WriteLine("\n No person found in given City/State.");
             }
         }
+        // UC9: Count persons by City and State (Summary)
+        public void CountPersonsByCityAndState()
+        {
+            if (count == 0)
+            {
+                Console.WriteLine("\n No contacts available.");
+                return;
+            }
+
+            Console.WriteLine("\n Count Menu (UC9) ");
+            Console.WriteLine("1. Count By City");
+            Console.WriteLine("2. Count By State");
+            Console.Write("Enter your choice: ");
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+
+            // temporary arrays to store unique city/state and counts
+            string[] keys = new string[count];
+            int[] keyCounts = new int[count];
+            int uniqueCount = 0;
+
+            if (choice == 1)
+            {
+                // Count By City
+                for (int i = 0; i < count; i++)
+                {
+                    string city = contacts[i].City;
+                    int index = -1;
+
+                    for (int j = 0; j < uniqueCount; j++)
+                    {
+                        if (keys[j].Equals(city, StringComparison.OrdinalIgnoreCase))
+                        {
+                            index = j;
+                            break;
+                        }
+                    }
+
+                    if (index == -1)
+                    {
+                        keys[uniqueCount] = city;
+                        keyCounts[uniqueCount] = 1;
+                        uniqueCount++;
+                    }
+                    else
+                    {
+                        keyCounts[index]++;
+                    }
+                }
+
+                Console.WriteLine("\n Persons Count By City:");
+                for (int i = 0; i < uniqueCount; i++)
+                {
+                    Console.WriteLine($"{keys[i]} : {keyCounts[i]}");
+                }
+            }
+            else if (choice == 2)
+            {
+                // Count By State
+                for (int i = 0; i < count; i++)
+                {
+                    string state = contacts[i].State;
+                    int index = -1;
+
+                    for (int j = 0; j < uniqueCount; j++)
+                    {
+                        if (keys[j].Equals(state, StringComparison.OrdinalIgnoreCase))
+                        {
+                            index = j;
+                            break;
+                        }
+                    }
+
+                    if (index == -1)
+                    {
+                        keys[uniqueCount] = state;
+                        keyCounts[uniqueCount] = 1;
+                        uniqueCount++;
+                    }
+                    else
+                    {
+                        keyCounts[index]++;
+                    }
+                }
+
+                Console.WriteLine("\n Persons Count By State:");
+                for (int i = 0; i < uniqueCount; i++)
+                {
+                    Console.WriteLine($"{keys[i]} : {keyCounts[i]}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("\n Invalid choice!");
+            }
+        }
+
 
     }
 }

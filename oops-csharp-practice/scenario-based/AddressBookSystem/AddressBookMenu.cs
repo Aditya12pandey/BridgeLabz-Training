@@ -23,7 +23,9 @@ namespace AddressBookSystem
                 Console.WriteLine("5. Add Multiple Contacts (UC5)");
                 Console.WriteLine("6. Search Person By City/State (UC7)");
                 Console.WriteLine("7. View Persons By City/State (UC8)");
-                Console.WriteLine("8. Exit");
+                Console.WriteLine("8. Count Persons By City/State (UC9)");
+                Console.WriteLine("9. Exit");
+
 
                 Console.Write("Enter your choice: ");
 
@@ -60,8 +62,13 @@ namespace AddressBookSystem
                         break;
 
                     case 8:
+                        addressBook.CountPersonsByCityAndState();
+                        break;
+
+                    case 9:
                         Console.WriteLine("\n Exiting Address Book Program...");
                         return;
+
 
 
                     default:
