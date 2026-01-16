@@ -4,9 +4,9 @@ namespace AddressBookSystem
 {
     public class AddressBookMenu
     {
-        private AddressBook addressBook;
+        private IAddressBookOperations addressBook;
 
-        public AddressBookMenu(AddressBook addressBook)
+        public AddressBookMenu(IAddressBookOperations addressBook)
         {
             this.addressBook = addressBook;
         }
@@ -16,12 +16,13 @@ namespace AddressBookSystem
             while (true)
             {
                 Console.WriteLine("\n MENU ");
-                Console.WriteLine("1. Add Contact (UC2)");
+                Console.WriteLine("1. Add Contact (UC2 + UC6)");
                 Console.WriteLine("2. Display All Contacts");
                 Console.WriteLine("3. Edit Contact (UC3)");
                 Console.WriteLine("4. Delete Contact (UC4)");
                 Console.WriteLine("5. Add Multiple Contacts (UC5)");
-                Console.WriteLine("6. Exit");
+                Console.WriteLine("6. Search Person By City/State (UC7)");
+                Console.WriteLine("7. Exit");
                 Console.Write("Enter your choice: ");
 
                 int choice = Convert.ToInt32(Console.ReadLine());
@@ -49,6 +50,10 @@ namespace AddressBookSystem
                         break;
 
                     case 6:
+                        addressBook.SearchPersonByCityOrState();
+                        break;
+
+                    case 7:
                         Console.WriteLine("\n Exiting Address Book Program...");
                         return;
 

@@ -2,7 +2,7 @@
 
 namespace AddressBookSystem
 {
-    public class AddressBook
+    public class AddressBook : IAddressBookOperations
     {
         private Contact[] contacts;
         private int count = 0;
@@ -28,7 +28,7 @@ namespace AddressBookSystem
             Console.Write("Last Name: ");
             string lastName = Console.ReadLine();
 
-            //  UC6 Duplicate Check
+            //  UC6: Duplicate Check
             for (int i = 0; i < count; i++)
             {
                 if (contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
@@ -66,7 +66,7 @@ namespace AddressBookSystem
             Console.WriteLine("\n Contact Added Successfully!");
         }
 
-
+        //  UC5
         public void AddMultipleContacts()
         {
             Console.Write("\nHow many contacts you want to add? : ");
@@ -85,6 +85,7 @@ namespace AddressBookSystem
             }
         }
 
+        //  UC3
         public void EditContact()
         {
             if (count == 0)
@@ -172,6 +173,7 @@ namespace AddressBookSystem
             contacts[index].Display();
         }
 
+        // ✅ UC4
         public void DeleteContact()
         {
             if (count == 0)
@@ -215,6 +217,7 @@ namespace AddressBookSystem
             Console.WriteLine("\n Contact Deleted Successfully!");
         }
 
+        //  Display
         public void DisplayAllContacts()
         {
             if (count == 0)
@@ -228,6 +231,68 @@ namespace AddressBookSystem
             for (int i = 0; i < count; i++)
             {
                 contacts[i].Display();
+            }
+        }
+
+        //  UC7
+        public void SearchPersonByCityOrState()
+        {
+            if (count == 0)
+            {
+                Console.WriteLine("\n No contacts available to search.");
+                return;
+            }
+
+            Console.WriteLine("\n Search Menu (UC7) ");
+            Console.WriteLine("1. Search By City");
+            Console.WriteLine("2. Search By State");
+            Console.Write("Enter your choice: ");
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+
+            bool found = false;
+
+            if (choice == 1)
+            {
+                Console.Write("Enter City Name to Search: ");
+                string cityName = Console.ReadLine();
+
+                Console.WriteLine($"\n Persons found in City: {cityName}\n");
+
+                for (int i = 0; i < count; i++)
+                {
+                    if (contacts[i].City.Equals(cityName, StringComparison.OrdinalIgnoreCase))
+                    {
+                        contacts[i].Display();
+                        found = true;
+                    }
+                }
+            }
+            else if (choice == 2)
+            {
+                Console.Write("Enter State Name to Search: ");
+                string stateName = Console.ReadLine();
+
+                Console.WriteLine($"\n Persons found in State: {stateName}\n");
+
+                for (int i = 0; i < count; i++)
+                {
+                    if (contacts[i].State.Equals(stateName, StringComparison.OrdinalIgnoreCase))
+                    {
+                        contacts[i].Display();
+                        found = true;
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("\n Invalid Choice!");
+                return;
+            }
+
+            if (!found)
+            {
+                Console.WriteLine("\n No person found in given City/State.");
             }
         }
     }
