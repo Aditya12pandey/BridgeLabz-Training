@@ -8,5 +8,6 @@ namespace AddressBookSystem
         void DeleteContact();
         void DisplayAllContacts();
         void SearchPersonByCityOrState();
+        void ViewPersonsByCityOrState(); 
     }
 }

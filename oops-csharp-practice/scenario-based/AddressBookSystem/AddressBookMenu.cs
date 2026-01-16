@@ -22,7 +22,9 @@ namespace AddressBookSystem
                 Console.WriteLine("4. Delete Contact (UC4)");
                 Console.WriteLine("5. Add Multiple Contacts (UC5)");
                 Console.WriteLine("6. Search Person By City/State (UC7)");
-                Console.WriteLine("7. Exit");
+                Console.WriteLine("7. View Persons By City/State (UC8)");
+                Console.WriteLine("8. Exit");
+
                 Console.Write("Enter your choice: ");
 
                 int choice = Convert.ToInt32(Console.ReadLine());
@@ -54,8 +56,13 @@ namespace AddressBookSystem
                         break;
 
                     case 7:
+                        addressBook.ViewPersonsByCityOrState();
+                        break;
+
+                    case 8:
                         Console.WriteLine("\n Exiting Address Book Program...");
                         return;
+
 
                     default:
                         Console.WriteLine("\n Invalid Choice! Try again.");

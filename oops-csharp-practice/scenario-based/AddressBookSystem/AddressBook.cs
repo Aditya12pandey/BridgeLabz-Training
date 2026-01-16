@@ -295,5 +295,70 @@ namespace AddressBookSystem
                 Console.WriteLine("\n No person found in given City/State.");
             }
         }
+        //  UC8: View Persons by City or State with Count
+        public void ViewPersonsByCityOrState()
+        {
+            if (count == 0)
+            {
+                Console.WriteLine("\n No contacts available.");
+                return;
+            }
+
+            Console.WriteLine("\n View Menu (UC8) ");
+            Console.WriteLine("1. View By City");
+            Console.WriteLine("2. View By State");
+            Console.Write("Enter your choice: ");
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+
+            int personCount = 0;
+
+            if (choice == 1)
+            {
+                Console.Write("Enter City Name: ");
+                string cityName = Console.ReadLine();
+
+                Console.WriteLine($"\n Persons in City: {cityName}\n");
+
+                for (int i = 0; i < count; i++)
+                {
+                    if (contacts[i].City.Equals(cityName, StringComparison.OrdinalIgnoreCase))
+                    {
+                        Console.WriteLine($" {contacts[i].FirstName} {contacts[i].LastName}");
+                        personCount++;
+                    }
+                }
+
+                Console.WriteLine($"\n Total Persons Found in {cityName}: {personCount}");
+            }
+            else if (choice == 2)
+            {
+                Console.Write("Enter State Name: ");
+                string stateName = Console.ReadLine();
+
+                Console.WriteLine($"\n Persons in State: {stateName}\n");
+
+                for (int i = 0; i < count; i++)
+                {
+                    if (contacts[i].State.Equals(stateName, StringComparison.OrdinalIgnoreCase))
+                    {
+                        Console.WriteLine($" {contacts[i].FirstName} {contacts[i].LastName}");
+                        personCount++;
+                    }
+                }
+
+                Console.WriteLine($"\n Total Persons Found in {stateName}: {personCount}");
+            }
+            else
+            {
+                Console.WriteLine("\n Invalid choice!");
+            }
+
+            if (personCount == 0)
+            {
+                Console.WriteLine("\n No person found in given City/State.");
+            }
+        }
+
     }
 }
