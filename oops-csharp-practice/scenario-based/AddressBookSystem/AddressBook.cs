@@ -28,6 +28,18 @@ namespace AddressBookSystem
             Console.Write("Last Name: ");
             string lastName = Console.ReadLine();
 
+            //  UC6 Duplicate Check
+            for (int i = 0; i < count; i++)
+            {
+                if (contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
+                    contacts[i].LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("\n Duplicate Contact Found!");
+                    Console.WriteLine(" This person already exists in Address Book.");
+                    return;
+                }
+            }
+
             Console.Write("Address: ");
             string address = Console.ReadLine();
 
@@ -53,6 +65,7 @@ namespace AddressBookSystem
 
             Console.WriteLine("\n Contact Added Successfully!");
         }
+
 
         public void AddMultipleContacts()
         {
