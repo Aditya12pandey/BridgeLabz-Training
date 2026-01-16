@@ -1,9 +1,10 @@
 ﻿using System;
+
 namespace AddressBookSystem
 {
-    public class AddressBookMain
+    class AddressBookMain
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("   Welcome to Address Book Program  ");
 
@@ -18,7 +19,8 @@ namespace AddressBookSystem
                 Console.WriteLine("1. Add Contact (UC2)");
                 Console.WriteLine("2. Display All Contacts");
                 Console.WriteLine("3. Edit Contact (UC3)");
-                Console.WriteLine("4. Exit");
+                Console.WriteLine("4. Delete Contact (UC4)");
+                Console.WriteLine("5. Exit");
                 Console.Write("Enter your choice: ");
 
                 int choice = Convert.ToInt32(Console.ReadLine());
@@ -38,6 +40,10 @@ namespace AddressBookSystem
                         break;
 
                     case 4:
+                        addressBook.DeleteContact();
+                        break;
+
+                    case 5:
                         Console.WriteLine("\n Exiting Address Book Program...");
                         return;
 

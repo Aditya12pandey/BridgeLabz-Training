@@ -142,6 +142,51 @@ namespace AddressBookSystem
             contacts[index].Display();
         }
 
+        //  UC4: Delete contact using name
+        public void DeleteContact()
+        {
+            if (count == 0)
+            {
+                Console.WriteLine("\n No contacts available to delete.");
+                return;
+            }
+
+            Console.Write("\nEnter First Name of contact to delete: ");
+            string firstName = Console.ReadLine();
+
+            Console.Write("Enter Last Name of contact to delete: ");
+            string lastName = Console.ReadLine();
+
+            int index = -1;
+
+            for (int i = 0; i < count; i++)
+            {
+                if (contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
+                    contacts[i].LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
+                {
+                    index = i;
+                    break;
+                }
+            }
+
+            if (index == -1)
+            {
+                Console.WriteLine("\n Contact not found!");
+                return;
+            }
+
+            // Shift left
+            for (int i = index; i < count - 1; i++)
+            {
+                contacts[i] = contacts[i + 1];
+            }
+
+            contacts[count - 1] = null;
+            count--;
+
+            Console.WriteLine("\n Contact Deleted Successfully!");
+        }
+
         public void DisplayAllContacts()
         {
             if (count == 0)
