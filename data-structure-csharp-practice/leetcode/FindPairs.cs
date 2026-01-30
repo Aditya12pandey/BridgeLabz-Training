@@ -1,0 +1,26 @@
+public class Solution {
+    public int FindPairs(int[] nums, int k) {
+         if (k < 0) return 0;
+
+        var counts = new SortedDictionary<int, int>();
+        foreach (var num in nums)
+        {
+            if (!counts.ContainsKey(num))
+                counts[num] = 1;
+            else
+                counts[num]++;
+        }
+
+        var count = 0;
+        if (k == 0)
+            foreach (var key in counts.Keys)
+            {
+                if (counts[key] > 1) count++;
+            }
+        else
+            foreach (var key in counts.Keys)
+                if (counts.ContainsKey(key + k)) count++;
+
+        return count;
+    }
+}
